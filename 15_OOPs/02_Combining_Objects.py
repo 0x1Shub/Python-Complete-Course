@@ -33,3 +33,19 @@ owner1 = Owner("Shubham", "Mumbai", 1100012)
 car1 = Car("tesla", "Model 3", 2023, owner1)
 car1.car_detail()
 print(car1.owner.name)
+
+
+# Accessing and Modifying data
+# Two Users
+class User:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def get_message(self, user):
+        print(f"Send message to {user.name}: Hii {user.name} this is {self.name}")
+    
+user1 = User("John", 28)
+user2 = User("Shubham", 22)
+
+user1.get_message(user2)
